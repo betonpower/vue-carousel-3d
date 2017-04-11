@@ -86,7 +86,7 @@
                 }
             },
             goTo () {
-                if (this.parent.clickable === true) {
+                if (this.parent.clickable === true && this.parent.lock === false) {
                     this.parent.goFar(this.index)
                 }
             }

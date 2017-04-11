@@ -344,7 +344,7 @@
             computeData () {
                 this.total = this.getSlideCount()
                 this.currentIndex = this.startIndex > this.total - 1 ? this.total - 1 : this.startIndex
-                this.viewport = this.$el.clientWidth
+                this.viewport = this.$el.offsetWidth
             },
             setSize () {
                 this.$el.style.cssText += 'height:' + this.slideHeight
